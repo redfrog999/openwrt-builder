@@ -10,7 +10,7 @@ if [ ! -f ".buildopenwrt" ]; then
 fi
 
 repo_url=`sed '/^url=/!d;s/.*=//' ${CWD}/config/repo`
-repo_url=${repo_url-:"https://github.com/redfrog999/openwrt"}
+repo_url=${repo_url-:"https://github.com/openwrt/openwrt"}
 
 repo_branch=`sed '/^branch=/!d;s/.*=//' ${CWD}/config/repo`
 repo_branch=${repo_branch-:"openwrt-23.05"}
