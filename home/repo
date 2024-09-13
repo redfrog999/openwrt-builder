@@ -1,2 +1,3 @@
 url=https://github.com/redfrog999/openwrt
-branch=openwrt-23.05
+#branch=openwrt-23.05
+branch=openwrt-22.03
