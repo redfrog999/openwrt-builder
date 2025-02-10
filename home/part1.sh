@@ -12,5 +12,5 @@ echo "src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main" >> "f
 # 添加插件源码
 #sed -i '$a src-git kiddin9 https://github.com/redfrog999/kiddin9-openwrt-packages' feeds.conf.default
 sed -i '$a src-git-full kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-sed -i 's/+firewall/+uci-firewall/g' feeds/luci/applications/luci-app-firewall/Makefile
+#sed -i 's/+firewall/+uci-firewall/g' feeds/luci/applications/luci-app-firewall/Makefile
 #sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
