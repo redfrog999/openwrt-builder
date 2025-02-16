@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sed -i '1i src-git redfrog999 https://github.com/redfrog999/packages.git;openwrt-23.05' feeds.conf.default
+sed -i '1i src-git redfrog999 https://github.com/redfrog999/packages.git;openwrt-24.10' feeds.conf.default
 cp -rf ../config/diff/* .
 
 # Add a feed source
