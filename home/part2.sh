@@ -16,7 +16,7 @@ sed -i 's/192.168.1.1/192.168.68.1/g' package/base-files/files/bin/config_genera
 # 最大连接数修改为65535
 sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=65535' package/base-files/files/etc/sysctl.conf
 
-echo '替换golang到1.24.x'
+echo '替换golang到1.25.x'
 rm -rf feeds/packages/lang/golang
-git clone -b 24.x --single-branch https://github.com/sbwml/packages_lang_golang feeds/packages/lang/golang
+git clone -b 25.x --single-branch https://github.com/sbwml/packages_lang_golang feeds/packages/lang/golang
 echo '=========Replace golang OK!========='
