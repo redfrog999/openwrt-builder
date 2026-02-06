@@ -13,7 +13,7 @@ repo_url=`sed '/^url=/!d;s/.*=//' ${CWD}/config/repo`
 repo_url=${repo_url-:"https://github.com/openwrt/openwrt"}
 
 repo_branch=`sed '/^branch=/!d;s/.*=//' ${CWD}/config/repo`
-repo_branch=${repo_branch-:"openwrt-21.02"}
+repo_branch=${repo_branch-:"openwrt-22.03"}
 
 if [[ ! -d "${CWD}/src" ]]; then
     echo "---no source files found, clone src from ${repo_url};${repo_branch}...---"
