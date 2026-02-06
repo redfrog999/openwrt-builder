@@ -1,8 +1,8 @@
 #!/bin/bash
 
-sed -i '1i src-git redfrog999 https://github.com/redfrog999/packages.git;openwrt-24.10' feeds.conf.default
-#sed -i '1i src-git redfrog999 https://github.com/redfrog999/packages-official.git;openwrt-22.03' feeds.conf.default
-cp -rf ../config/diff/* .
+# sed -i '1i src-git redfrog999 https://github.com/redfrog999/packages.git;openwrt-24.10' feeds.conf.default
+# sed -i '1i src-git redfrog999 https://github.com/redfrog999/packages-official.git;openwrt-22.03' feeds.conf.default
+# cp -rf ../config/diff/* .
 
 # Add a feed source
 echo "src-git passwall_packages https://github.com/Openwrt-Passwall/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
