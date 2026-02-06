@@ -1,12 +1,13 @@
 #!/bin/bash
 
-sed -i '1i src-git redfrog999 https://github.com/redfrog999/packages.git;openwrt-24.10' feeds.conf.default
-cp -rf ../config/diff/* .
+# sed -i '1i src-git redfrog999 https://github.com/redfrog999/packages.git;openwrt-24.10' feeds.conf.default
+# cp -rf ../config/diff/* .
 
 # Add a feed source
 echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
-echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >> "feeds.conf.default"
-echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main" >> "feeds.conf.default"
+echo "src-git passwall_packages https://github.com/Openwrt-Passwall/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
+echo "src-git passwall https://github.com/Openwrt-Passwall/openwrt-passwall.git;main" >> "feeds.conf.default"
+echo "src-git passwall https://github.com/Openwrt-Passwall/openwrt-passwall2.git;main" >> "feeds.conf.default"
 echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki" >> "feeds.conf.default"
 
 # 添加插件源码
