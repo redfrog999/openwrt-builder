@@ -1,5 +1,5 @@
-url=https://github.com/redfrog999/openwrt
-#url=https://github.com/NicolasMe9907/immortalwrt-mt798x-6.6
+#url=https://github.com/redfrog999/openwrt
+url=https://github.com/NicolasMe9907/immortalwrt-mt798x-6.6
 #url=https://github.com/redfrog999/immortalwrt-mt798x-6.6
-branch=openwrt-22.03
-#branch=openwrt-24.10-6.6
+#branch=openwrt-22.03
+branch=openwrt-24.10-6.6
