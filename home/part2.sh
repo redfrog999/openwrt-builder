@@ -10,6 +10,13 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
+sudo rm /var/lib/dpkg/lock-frontend 2>/dev/null
+sudo dpkg --configure -a
+
+# 强行删除 Rust feed，防止它参与编译干扰
+./scripts/feeds uninstall -a rust
+./scripts/feeds install -a
+
 # Modify default IP 
 sed -i 's/192.168.1.1/192.168.68.1/g' package/base-files/files/bin/config_generate
 
